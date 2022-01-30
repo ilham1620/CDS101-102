@@ -2,7 +2,9 @@
 title: "Lab1"
 author: "Ilham Bouzit"
 date: "1/29/2022"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -58,3 +60,31 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 [What does this do?](https://google.com) It puts a link within a sentence.
         
 ![How is this different from the above? It creates a title for an image, but the title is not centered](test-image.jpeg)
+
+| Column 1 | Column 2 | Column 3 | Column 4 | Column 5 |
+| --- | ---: | :---: | :--- | :--- |
+| Notice | what | the | colons | yes |
+| are | doing? | | | yes | |
+
+Table: The table with poor spacing
+
+| Column 1 | Column 2 | Column 3 | Column 4 | Column 5 |
+| -------- | -------: | :------: | :------- | :------- |
+| Notice   | what     | the      | colons   |  Yes     |
+| are      | doing?   |          |          |  Yes     |
+
+Table: The table with good spacing
+
+Question 5: For the following command I am getting an error that the function qplot cannot be identified.
+
+{r}
+
+qplot(x = displ, y = hwy, data = mpg)
+
+Question 6: For the following output I am getting an error that the object mgp is not found. A coomman thing between both commands is that they both require handlers. 
+
+{r}
+
+print(mpg)
+
+
